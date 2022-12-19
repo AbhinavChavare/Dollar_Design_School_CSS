@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            min-height: 100vh;
+            background-color: rgb(82, 210, 50);
+            padding: 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+.animate{
+background-color: rgb(182, 252, 214);
+width: 70vw;
+min-width: 100px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 250px;
+height: 50vh;
+border-radius: 10px;
+}
+ .anim-image{
+    height: 80px;
+    width: 64px;
+    /* background-color: wheat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./walk-cycle.png");
+    background-repeat: no-repeat;
+    animation: movement steps(9) 2s infinite ;
+    scale: 1.5;
+
+}
+@keyframes movement {
+ 0% {background-position-x: 0px;}
+    100%{background-position-x:-576px ;}
+    
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <h1> Welcome to Animation</h1>
+       <Section class="animate">
+        <div class="anim-image"></div>
+        <div>Let's Win</div>
+       </Section>
+    </div>
+</body>
+</html>
